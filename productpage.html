@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background-color: black;
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        header{
+            position: relative;
+            background-color: black;
+            height: 100%;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+        header img{
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+        header .container{
+            position: relative;
+            z-index: 2;
+        }
+        header .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0;
+            z-index: 1;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVu
+        fDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80">
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100">
+                    <h1 class="display-3">Unlimited online courses.</h1>
+                    <p class="lead mb-0">Watch anywhere. Advance your career.</p>
+                    <p><a href="#checkout" class="btn btn-primary my-5 px-4 py-2">Enroll Now ></a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="pricing-header text-center">
+        <h2 class="display-4 text-white py-5">Pricing</h2>
+
+    </div>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h3>Sale</h3>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title pricing-card-title">$49.99
+                        <small class="text-muted">Regularly $499.99</small>
+                    </h3>
+                    <ul class="list-unstyled">
+                        <li>Lifetime Access</li>
+                        <li>Certificate of Completion</li>
+                        <li>Project based curriculum</li>
+                        <li>800,000 copies sold</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="checkout">
+        <div class="header text-center"><h2 class="display-4 text-white py-4">Checkout</h2></div>
+        <div class="row px-5 mx-5 py-5 text-white">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your cart</span>
+                    <span class="badge badge-secondary badge-pill">1</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success"><h5>Promo Code <small>SALE</small></h5></div>
+                        <span class="text-success">-$405.09</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span>Total (USD)</span>
+                        <strong>$49.99</strong></li>
+                </ul>
+                <form class="card p-2" action="">
+                    <div class="input-group"><input type="text" class="form-control" placeholder="Promo Code">
+                    <div class="input-group-append"><button type="submit" class="btn btn-secondary">Redeem</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Billing Address</h4>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3"><input type="text" class="form-control" id="firstName" required>
+                        <label for="firstName">First Name</label>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="" class="form-control" id="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="" id="address" required>
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mb-3"><label for="country">Country</label>
+                        <select name="" id="country" class="custom-select d-block w-100">
+                            <option value="">Choose...</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>France</option>
+                        </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">State</label>
+                            <select name="" id="state" class="custom-select d-block w-100">
+                                <option value="">Choose...</option>
+                                <option>West Bengal</option>
+                                <option>Bihar</option>
+                                <option>Jharkhand</option>
+                                <option>Assam</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zipcode">ZipCode</label>
+                            <input type="text" name="" id="zipcode" class="form-control">
+                        </div>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address">
+                        <label for="same-address" class="custom-control-label">
+                            Shipping address is same as my billing address.
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" name="" id="save-information" class="custom-control-input">
+                        <label for="save-information" class="custom-control-label">Save my address</label>
+                    </div>
+                    <h3 class="mb-3 py-3">Payment</h3>
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="paymentMethod" id="creditcard" class="custom-control-input">
+                            <label for="creditcard" class="custom-control-label">Credit Card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input checked type="radio" name="paymentMethod" id="debitcard" class="custom-control-input">
+                            <label for="debitcard" class="custom-control-label">Debit Card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="paymentMethod" id="PayPal" class="custom-control-input">
+                            <label for="PayPal" class="custom-control-label">PayPal</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="" id="cardholder" class="form-control">
+                            <label for="cardholder">Name of cardholder</label>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="" id="cardnumber" class="form-control">
+                            <label for="cardnumber">Card Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3"><input type="text" name="" id="expiration-date" class="form-control">
+                        <label for="expiration-date">Expiration</label>
+                        </div>
+                        <div class="col-md-3 mb-3"><input type="text" id="security-code" class="form-control">
+                        <label for="security-code">Security Code</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>
